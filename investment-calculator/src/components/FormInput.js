@@ -44,9 +44,13 @@ function InputForm(props) {
     newInput["yearly-contribution"] = yearlyContribution;
     newInput["expected-return"] = expectedReturn;
     newInput["duration"] = duration;
-    
+
     props.onFormSubmit(newInput)
   };
+
+  const resetHandler =() => {
+
+  }
 
   return (
     <div>
@@ -86,7 +90,7 @@ function InputForm(props) {
           </p>
         </div>
         <p className={styles.actions}>
-          <button type="reset" className="buttonAlt">
+          <button onClick={resetHandler} type="reset" className="buttonAlt">
             Reset
           </button>
           <button type="submit" className="button">
