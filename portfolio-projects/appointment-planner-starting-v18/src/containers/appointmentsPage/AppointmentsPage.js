@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import { AppointmentForm } from "../../components/appointmentForm/AppointmentForm";
 import { TileList } from "../../components/tileList/TileList";
+import styles from './appointmentPage.module.css'
 
 export const AppointmentsPage = ({
   contacts,
@@ -36,8 +37,8 @@ export const AppointmentsPage = ({
 
   return (
     <div>
-      <section>
-        <h2>Add Appointment</h2>
+      <section className={styles.appointments}>
+        <h2 className={styles.addHeader}>Add Appointment</h2>
         <AppointmentForm
           title={name}
           setTitle={setName}
@@ -51,10 +52,12 @@ export const AppointmentsPage = ({
           contacts={contacts}
         />
       </section>
-      <hr />
+      <hr className={styles.line}/>
       <section>
         <h2>Appointments</h2>
+        <div className={styles['tile-container']}>
         <TileList objArray={appointments} />
+        </div>
       </section>
     </div>
   );

@@ -1,0 +1,55 @@
+.form {
+  width: 40vw;
+  height: auto;
+  margin: 0 auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: #ced4da;
+  padding: 2rem;
+  border-radius: 1rem;
+  color: black;
+}
+.itemsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formItems {
+  display: flex;
+  margin: 0.5rem 0;
+}
+
+.formItems > label {
+  width: 20%;
+  align-self: center;
+}
+
+.formItems > input {
+  width: 80%;
+  padding: 1rem;
+  border: 0.2px solid white;
+  border-radius: 1rem;
+}
+
+.formItems > select {
+  width: 80%;
+  padding: 1rem;
+  border: 0.2px solid white;
+  border-radius: 1rem;
+}
+
+.btn {
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  width: 100%;
+}
+button{
+  width: 20%;
+  padding: 1rem;
+  border-radius: .2rem;
+  border: 0.2px solid white;
+  background: #A577FB;
+
+  
+}

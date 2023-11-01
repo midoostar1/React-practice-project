@@ -1,0 +1,16 @@
+.tile-container{
+	width: 80vw;
+	background: #ced4da;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	margin: .5rem auto;
+	border-radius: .5rem;
+	height: auto;
+    flex-wrap: wrap;
+}
+.line{
+	width: 80vw;
+	margin-top: .5rem;
+	color:  #A577FB
+}

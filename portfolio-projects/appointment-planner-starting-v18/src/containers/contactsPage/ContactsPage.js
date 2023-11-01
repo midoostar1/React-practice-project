@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import { ContactForm } from "../../components/contactForm/ContactForm";
 import { TileList } from "../../components/tileList/TileList";
+import styles from './contactPage.module.css'
 
 export const ContactsPage = ({ contacts, onAddContact }) => {
   /*
@@ -58,10 +59,13 @@ export const ContactsPage = ({ contacts, onAddContact }) => {
           handleSubmit={handleSubmit}
         />
       </section>
-      <hr />
-      <section>
+      <hr className={styles.line}/>
+      <section >
         <h2>Contacts</h2>
+        <div className={styles['tile-container']}>
         <TileList objArray={contacts} />
+        </div>
+     
       </section>
     </div>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./contactForm.module.css";
 
 export const ContactForm = ({
   name,
@@ -8,9 +9,7 @@ export const ContactForm = ({
   email,
   setEmail,
   handleSubmit,
- 
 }) => {
-
   const handleChange = (value, id) => {
     if (id === "name") {
       setName(value);
@@ -23,33 +22,41 @@ export const ContactForm = ({
     }
   };
 
-
-
   return (
     <>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Name</label>
-        <input
-          onChange={(e) => handleChange(e.target.value, "name")}
-          id="name"
-          type="text"
-          value={name}
-        />
-        <label htmlFor="email">Email</label>
-        <input
-          onChange={(e) => handleChange(e.target.value, "email")}
-          id="email"
-          type="email"
-          value={email}
-        />
-        <label htmlFor="number">Number</label>
-        <input
-          onChange={(e) => handleChange(e.target.value, "phone")}
-          id="number"
-          type="number"
-          value={phone}
-        />
-        <button type="submit">Submit</button>
+      <form className={styles.form} onSubmit={handleSubmit}>
+        <div className={styles.itemsContainer}>
+          <div className={styles.formItems}>
+            <label htmlFor="name">Name</label>
+            <input
+              onChange={(e) => handleChange(e.target.value, "name")}
+              id="name"
+              type="text"
+              value={name}
+            />
+          </div>
+          <div className={styles.formItems}>
+            <label htmlFor="email">Email</label>
+            <input
+              onChange={(e) => handleChange(e.target.value, "email")}
+              id="email"
+              type="email"
+              value={email}
+            />
+          </div>
+          <div className={styles.formItems}>
+            <label htmlFor="number">Number</label>
+            <input
+              onChange={(e) => handleChange(e.target.value, "phone")}
+              id="number"
+              type="number"
+              value={phone}
+            />
+          </div>
+        </div>
+        <div className={styles.btn}>
+          <button type="submit">Submit</button>
+        </div>
       </form>
     </>
   );

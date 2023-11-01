@@ -1,0 +1,32 @@
+.nav{
+    width: 80vw;
+    background: #4f4e52;
+   
+    height: 5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+
+    
+}
+
+nav > a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: white;
+    margin :  auto .2rem;
+    text-decoration-line: none;
+    padding: 0.5rem
+  }
+  
+  nav > a.active {
+    text-decoration-line: underline;
+    color: #9967f6;
+  }
+  
+ 

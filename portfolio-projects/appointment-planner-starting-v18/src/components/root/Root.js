@@ -1,4 +1,5 @@
 import {  Outlet, NavLink } from "react-router-dom";
+import styles from './root.module.css'
 
 export const ROUTES = {
     CONTACTS: "/contacts",
@@ -8,11 +9,11 @@ export const ROUTES = {
 function Root() {
     return (
         <>
-            <nav>
-                <NavLink to={ROUTES.CONTACTS} >
+            <nav className={styles.nav}>
+                <NavLink to={ROUTES.CONTACTS} className={styles.navItems}>
                 Contacts
                 </NavLink>
-                <NavLink to={ROUTES.APPOINTMENTS} >
+                <NavLink to={ROUTES.APPOINTMENTS}  className={styles.navItems}>
                 Appointments
                 </NavLink>
             </nav>
