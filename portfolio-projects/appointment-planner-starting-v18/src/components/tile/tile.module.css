@@ -1,0 +1,14 @@
+.card {
+	
+	border-radius: 10px;
+	width: 20rem;
+	height: 15rem;
+	padding: 15px;
+
+	box-shadow: -5px 5px 15px 5px rgba(150, 150, 150, 0.2);
+}
+
+.card>p{
+	
+	padding: 2px;
+}
